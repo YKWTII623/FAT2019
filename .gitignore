@@ -1,0 +1,10 @@
+dataset/
+models/
+outputs/
+features/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.matplotlib/
+.cache/
+.claude/
