@@ -2,7 +2,7 @@
 
 参加 Kaggle Freesound Audio Tagging 2019 比赛的实验记录。任务是对 10 秒以内的音频片段打 80 个环境声音标签，每个片段可以同时属于多个类别。
 
-目前验证集 LWLRAP 做到了 **0.620**（比赛 top 1 是 0.755）。
+目前验证集 LWLRAP 做到了 **0.623**（比赛 top 1 是 0.755）。
 
 ## 数据
 
@@ -26,12 +26,9 @@
 
 详细代码在 `src/fat2019_cnn.py`。
 
-## 跑起来
+## 运行
 
 ```bash
-# 装依赖
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
-pip install numpy pandas scipy scikit-learn joblib tqdm matplotlib
 
 # 训练
 python src/fat2019_cnn.py train --include-noisy --batch-size 64
